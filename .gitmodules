@@ -1,0 +1,3 @@
+[submodule "Models/Ranking"]
+	path = Models/Ranking
+	url = git@github.com:orienteeringdev/Ranking.git
