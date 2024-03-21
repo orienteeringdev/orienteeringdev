@@ -5,6 +5,8 @@ Construction of geo-commons by communities of practice: the case of orienteering
 ----
 
 
+One important aspect of geo-commons lies in the diversity of their sourcing, and consequently in the possibility of crowdsourcing by domain experts in very specific contexts, enabled by the open sourcing of raw data, tools and methods. We propose in this contribution to illustrate such processes of geo-commons construction through the niche domain of orienteering maps generation from open LIDAR data. Forest orienteering maps have a large scale (1/10000 for middle distance and 1/15000 for long distance) and a quasi exhaustive description of topographic details, implying a very high production cost by expert cartographers. Although the interpretation and selection part remains crucial and fieldwork still necessary, base map automatic generation from LIDAR data has shown a significant potential in reducing mapping costs and times, but also in empowering runners to train on previsouly unmapped terrains. The free software Karttapullautin has allowed communities of practice of orienteering mappers in several countries (Norway, Finland, Switzerland, France, Spain, New Zealand) to systematically generate maps accross an unprecendeted coverage. We detail the different production contexts, in which institutional or private partners can be involved. Future work will include interviews with stakeholders in the various country contexts, to better understand stakes at play during the contruction of geo-commons.
+
 
 
 
