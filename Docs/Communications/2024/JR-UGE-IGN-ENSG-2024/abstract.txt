@@ -1,5 +1,14 @@
 
 
+TODO chge name remote repo
+
+resources: https://www.routegadget.net/karttapullautin/
+https://mapant.net/
+
+
+----
+
+
 Construction of geo-commons by communities of practice: the case of orienteering maps generation from open LIDAR data
 
 ----
