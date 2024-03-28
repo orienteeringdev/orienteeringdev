@@ -78,9 +78,6 @@ $^{4}$UMR CNRS 8504 G{\'e}ographie-cit{\'e}s
 
 
 
-%One important aspect of geo-commons lies in the diversity of their sourcing, and consequently in the possibility of crowdsourcing by domain experts in very specific contexts, enabled by the open sourcing of raw data, tools and methods. We propose in this contribution to illustrate such processes of geo-commons construction through the niche domain of orienteering maps generation from open LIDAR data. Forest orienteering maps have a large scale (1/10000 for middle distance and 1/15000 for long distance) and a quasi exhaustive description of topographic details, implying a very high production cost by expert cartographers. Although the interpretation and selection part remains crucial and fieldwork still necessary, base map automatic generation from LIDAR data has shown a significant potential in reducing mapping costs and times, but also in empowering runners to train on previsouly unmapped terrains. The free software Karttapullautin has allowed communities of practice of orienteering mappers in several countries (Norway, Finland, Switzerland, France, Spain, New Zealand) to systematically generate maps accross an unprecendeted coverage. We detail the different production contexts, in which institutional or private partners can be involved. Future work will include interviews with stakeholders in the various country contexts, to better understand stakes at play during the contruction of geo-commons.
-
-
 \frame{\maketitle}
 
 \sframe{Digital twins as commons?}{
@@ -132,30 +129,114 @@ $\rightarrow$ public consultation in May 2021 (165 stakeholders from various bac
 
 % ! def community of practice
 
+%One important aspect of geo-commons lies in the diversity of their sourcing, and consequently in the possibility of crowdsourcing by domain experts in very specific contexts, enabled by the open sourcing of raw data, tools and methods. We propose in this contribution to illustrate such processes of geo-commons construction through the niche domain of orienteering maps generation from open LIDAR data.
+
+$\rightarrow$ one core aspect of geo-commons is their diverse sourcing, applications and stakeholders
+
+\medskip
+
+$\rightarrow$ specific communities of practice involve niche knowledge experts, potentially rich for the construction of geo-commons, making it an interesting sociological field
+
+\medskip
+
+$\rightarrow$ orienteering map generation with LIDAR data is an example of such a niche community of practice
+
+
+\bigskip
+\bigskip
+
+
+\textbf{Research question:}
+
+\textit{What are the characteristics of communities using automatic orienteering map generation with LIDAR data, across different countries and contexts? How does this inform processes of geo-commons construction?}
+
+$\rightarrow$ at this stage, preliminary qualitative analysis of stakeholders and contexts.
 
 }
 
 
 \sframe{Orienteering maps}{
 
+
+% Forest orienteering maps have a large scale (1/10000 for middle distance and 1/15000 for long distance) and a quasi exhaustive description of topographic details, implying a very high production cost by expert cartographers. 
+
+% ex bleau ancienne et recente!
+
+Highly detailed topographic maps (mostly forest/natural areas), scale 1/10000 or 1/15000, high production cost and few mapping experts ; mapping norms by the IOF \cite{zentai2001development}
+
+\bigskip
+
+\includegraphics[width=0.4\linewidth]{figures/FreeOTour29_A4.jpg}\hspace{0.5cm}
+\includegraphics[width=0.5\linewidth]{figures/tour_denec.png}
+
 }
 
 \sframe{Map generation from LIDAR data}{
 
+% Although the interpretation and selection part remains crucial and fieldwork still necessary, base map automatic generation from LIDAR data has shown a significant potential in reducing mapping costs and times, but also in empowering runners to train on previsouly unmapped terrains.
+
+New technologies (GPS, LIDAR) have a significant potential in reducing costs and extending mapped coverage \cite{zentai2007new}
+
+\bigskip
+
+\includegraphics[width=0.45\linewidth]{figures/middle_lidar.png}\hspace{0.5cm}
+\includegraphics[width=0.45\linewidth]{figures/middle.png}
+
+}
+
+\sframe{Mapping coverage}{
+
+High potential for outdoor activities: empower runners to discover new areas, avoid overcrowding, long-range projects, \ldots
+
+\bigskip
+
+% mention across Norway
+
+\centering
+
+\includegraphics[width=0.7\linewidth]{figures/accrossnorway_1.png}
+\includegraphics[width=0.29\linewidth]{figures/accrossnorway_2.png}
+
+}
+
+
+
+\sframe{The Mapant initiative}{
+
+
+
+
+% The free software Karttapullautin has allowed communities of practice of orienteering mappers in several countries (Norway, Finland, Switzerland, France, Spain, New Zealand) to systematically generate maps accross an unprecendeted coverage.
+
+Free software Karttapullautin to generate base maps from LIDAR data, open source forks also developped \url{https://github.com/rphlo/rusty-pullauta}
+
+\medskip
+
+Systematic processing in several countries with full LIDAR coverage: (Norway, Finland, Switzerland, France, Spain, New Zealand)
+
+\medskip
+
+\centering
+
+\includegraphics[width=0.25\linewidth]{figures/mapant_nor.png}\hspace{0.5cm}
+\includegraphics[width=0.35\linewidth]{figures/mapant_swi.png}\hspace{0.5cm}
+\includegraphics[width=0.2\linewidth]{figures/mapant_fi.png}
 
 
 }
 
 \sframe{The Mapant initiative}{
 
-
-% mention across Norway
-
+\includegraphics[width=0.35\linewidth]{figures/mapant_fr.png}\hspace{0.5cm}
+\includegraphics[width=0.35\linewidth]{figures/mapant_esp.png}\hspace{0.5cm}
+\includegraphics[width=0.18\linewidth]{figures/mapant_nz.png}
 
 }
 
 
 \sframe{Comparative analysis}{
+
+% We detail the different production contexts, in which institutional or private partners can be involved.
 
 % institutional context
 
@@ -164,18 +245,64 @@ $\rightarrow$ public consultation in May 2021 (165 stakeholders from various bac
 % coverage
 
 % usage?
+% TODO find way to informally collect maps, runners using it, ?
+
+% TODO add data sources (OSM for some, not all?)
+
+% TODO add tools / libraries
+
+\tiny
+
+\begin{center}
+	\begin{tabular}{|p{1.7cm}|p{1.8cm}|p{1.4cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+	\hline
+ Country & Institutional context & Data licence & Maps licence & Coverage & Usage \\\hline 
+ Norway & Collab. State Mapping Agency / National Federation & CC-BY & CC-BY-NC & 62\% & Suggested for course planning \\ 
+  Finland & Individuals & CC-BY & CC-BY & $\sim 80\%$ & Suggested as background map ; WMTS/WMS \\  
+   Switzerland & Private company / local authorities / clubs & Various & NA & > 95\% & WMTS \\  
+    France & Individuals & NA & NA & < 5\% & Elite athletes \\  
+     Spain & Collab. State Mapping Agency / National Federation / Individuals & CC-BY/ODbL & CC-BY & > 95\% & NA \\  
+      New Zealand & Individuals & CC-BY & NA & $\sim 50\%$ & WMTS \\\hline
+	\end{tabular}
+\end{center}
+
 
 }
 
 
-\sframe{Future work}{
+\sframe{Discussion}{
+
+
+% Future work will include interviews with stakeholders in the various country contexts, to better understand stakes at play during the contruction of geo-commons.
+
+\textbf{Results}
+
+\medskip
+
+$\rightarrow$ various stakeholders (institutional, collectivities, individuals), tools, licences, \ldots for mostly the same geo-common in terms of final data
+
+\medskip
+
+$\rightarrow$ which implications in terms of durability and accessibility? Which role of local usages in the initiative?
+
+
+
+\bigskip
+
+
+\textbf{Future work}
+
+\medskip
+
+$\rightarrow$ interviews with mappers, stakeholders, for a more detailed sociological study of production contexts
+
+\medskip
+
+$\rightarrow$ broad online survey of usages
+
 
 }
 
-
-\sframe{Conclusion}{
-
-}
 
 
 
@@ -194,238 +321,6 @@ $\rightarrow$ public consultation in May 2021 (165 stakeholders from various bac
 
 \end{document}
 
-
-
-
-
-
-
-
-
-
-% slides last year
-
-
-\sframe{Digital twins and sustainability: literature mapping}{
-
-% si possible carto lit dig twin - sdgs
-
-% Request : "digital twin" AND "sustainable development" (adding "sustainb*" -> too general, include sust economically e.g.)
-%   initial corpus?
-
-\justify
-
-\textit{How do the two main themes of the conference go along in the literature?}
-
-\medskip
-
-\textit{What principal fields of study applying digital twins to sustainable development?}
-
-
-\bigskip
-\bigskip
-
-$\rightarrow$ Using the methods and tools of \cite{raimbault2019exploration} \cite{raimbault2021empowering}, we do a systematic literature mapping using citation networks, constructed from google scholar data.
-
-\medskip
-
-$\rightarrow$ Starting from a seed corpus of 100 papers obtained with the request\\
-\texttt{"digital twin" AND "sustainable development"}, we retrieve backward citations at depth two, to obtain a corpus of \textbf{14042 papers} with \textbf{24229 citation links}.
-
-\medskip
-
-$\rightarrow$ We analyse the citation network using community detection, to retrieve endogenous research fields.
-
-
-}
-
-\sframe{Main research areas from the literature mapping}{
-
-\begin{columns}
-	\begin{column}{0.6\linewidth}
-		\includegraphics[width=1.1\linewidth]{figures/core_zoom}
-	\end{column}
-	\begin{column}{0.39\linewidth}
-		\footnotesize
-		\begin{itemize}
-		    \item ``Smart manufacturing'' (21.9\%)
-			\item Epistemology of DT (14.6\%)
-			\item Civil engineering/BIM (11.4\%)
-			\item Supply chain (6.8\%)
-			\item Circular economy (5.6\%)
-			\item Energy systems (5.1\%)
-			\item Urban analytics/smart cities (5.0\%)
-			\item ``Metaverse'' (4.5\%)
-			\item ``Industry 4.0'' (4.2\%)
-			\item ``Smart farming'' (4.0\%)
-		\end{itemize}
-	\end{column}
-\end{columns}
-
-
-
-}
-
-
-
-
-
-\sframe{Digital twins: concepts and reality}{
-
-\justify
-
-% dig twins \cite{batty2018digital}
-
-\textbf{Definition of a DT?} Coined in the 2000s from engineering \cite{batty2018digital}
-
-\medskip
-
-{\footnotesize ``\textit{A digital twin is a mirror image of a physical process [\ldots], usually matching exactly the operation of the physical process which takes place in real time.}''}
-
-\medskip
-
-$\rightarrow$ in practice not identical (example for cities: real-time GIS \cite{li2020real}); often not in real time or even dynamical.
-
-\bigskip
-
-The \textbf{link between the model (twin) and the system} is complex: which level of detail, which modelling choices, how to handle the resulting hybrid cyber-physical system? \cite{batty2019map}
-
-``{\footnotesize \textit{A map is not the territory, or is it?}}''
-% (inspire houllebeq et Levy) (meaning of representation)
-
-\bigskip
-
-% link with complexity \cite{arcaute2021future}
-
-DT approaches too close to systems engineering, and often miss \textbf{social science/complexity} issues \cite{arcaute2021future}
-
-$\rightarrow$ models at all time scales decision-making in the anthropocene.
-
-
-}
-
-
-
-\sframe{From digital twins to multiple simulation models}{
-
-
-\justify
-
-\textit{How to link digital twins and decision-making for sustainable development?}
-
-\bigskip
-\bigskip
-
-$\rightarrow$ smart cities are on the long run: urban analytics for policy \\
-\cite{kandt2021smart}
-
-\bigskip
-
-$\rightarrow$ unpredictability, multi-dimensionality, multi-scalarity of territorial systems: need for multiple models \cite{batty2021multiple}, multiple perspectives\\
- \cite{pumain2020conclusion}
-
-\bigskip
-
-$\rightarrow$ simulation models of territories for sustainable policies\\
-\cite{raimbault2020empowering}
-
-
-}
-
-
-
-
-
-
-
-
-
-\sframe{Model integration: land-use transport interactions}{
-
-
-\includegraphics[width=0.39\linewidth]{figures/accessp_withbridge_prd_EN.png}
-\includegraphics[width=0.6\textwidth]{figures/macrocoevol_en.png}
-
-\medskip
-
-
-\textit{A modeling approach to the issue of structuring effects of transport infrastructures: co-evolution of networks and territories as a strong model integration}
-
-\bigskip
-
-\tiny
-%\textcolor{grey}
-Raimbault, J. (2019). Evolving accessibility landscapes: mutations of transportation networks in China. In Aveline-Dubach, N., ed. \textit{Pathways of sustainable urban development across China - the cases of Hangzhou, Datong and Zhuhai}, pp 89-108. Imago. ISBN:978-88-94384-71-0
-
-\nocite{raimbault:halshs-02265423}
-
-\smallskip
-
-Raimbault, J. (2020). Indirect evidence of network effects in a system of cities. Environment and Planning B: Urban Analytics and City Science, 47(1), 138-155.
-
-\nocite{raimbault2020indirect}
-
-\smallskip
-
-Raimbault, J. (2021). Modeling the co-evolution of cities and networks. In Handbook of Cities and Networks. Edward Elgar Publishing.
-
-\nocite{raimbault2021modeling}
-
-
-}
-
-
-\sframe{Implementing horizontal model integration}{
-
-\justify
-
-\textit{Constructing a multimodal four step transport models by linking open components and data with scientific workflow engines}
-
-\bigskip
-
-\textbf{Integrated models:}
-
-\begin{itemize}
-	\item MATSim model (MATSim Community) for transport \cite{w2016multi}
-	\item SPENSER model (University of Leeds) for synthetic population \cite{spooner2021dynamic}
-	\item QUANT model (CASA, University College London) for spatial interactions \cite{batty2021new}
-	\item spatialdata library (OpenMOLE community) for data processing \cite{raimbault2020scala}
-\end{itemize}
-
-\smallskip
-
-\tiny
-
-Raimbault, J., \& Batty, M. (2021). Estimating public transport congestion in UK urban areas with open transport models. GISRUK 2021 Proceedings.
-
-\nocite{raimbault2021estimating}
-
-}
-
-
-\sframe{Model coupling: urban design and UHI}{
-
-\begin{columns}
-	\begin{column}{0.6\linewidth}
-		\begin{center}
-			\includegraphics[width=\linewidth]{figures/buildings_6.png}	
-		\end{center}
-	\end{column}
-	\begin{column}{0.39\linewidth}
-		\justify
-		\textbf{SURe project} (collaboration LASTIG, ISC-PIF, EPIDAPO)
-		
-		\bigskip
-		
-		$\rightarrow$ coupling the SimPLU3D urban generative model \cite{brasebin2017apports} with an Urban Heat Island model to find compromises between density and the UHI effect. 
-
-	\end{column}
-\end{columns}
-
-
-
-
-}
 
 
 
